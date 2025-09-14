@@ -1,55 +1,49 @@
-import React, { useState } from 'react'
-import style from '../CSS/MealType.module.css'
-function MealType({setDishType}) {
-    const [all,setAll]=useState('selected')
-    const [starter,setStarter]=useState('notSelected')
-    const [main,setMain]=useState('notSelected')
-    const [dessert,setDessert]=useState('notSelected')
-    const [sides,setSides]=useState('notSelected')
+import React, { useState } from 'react';
+import style from '../CSS/MealType.module.css';
 
-    const handleClick=(type)=>{
-        setDishType(type)
-       if(type==='all'){ 
-        setAll('selected')
-        setStarter('notSelected')
-        setMain('notSelected')
-        setDessert('notSelected')
-        setSides('notSelected')
-       }else if(type==='STARTER'){
-        setStarter('selected')
-        setAll('notSelected')
-        setMain('notSelected')
-        setDessert('notSelected')
-        setSides('notSelected')
-       }else if(type==='MAIN COURSE'){
-        setAll('notSelected')
-        setStarter('notSelected')
-        setMain('selected')
-        setDessert('notSelected')
-        setSides('notSelected')
-       }else if(type==='DESSERT'){
-        setAll('notSelected')
-        setStarter('notSelected')
-        setMain('notSelected')
-        setDessert('selected')
-        setSides('notSelected')
-       }else{
-        setAll('notSelected')
-        setStarter('notSelected')
-        setMain('notSelected')
-        setDessert('notSelected')
-        setSides('selected')
-       }
-    }
-    return (
-        <div className={style.mealType}>
-            <button onClick={()=>handleClick('all')} className={style[all]}>All</button>
-            <button onClick={()=>handleClick('STARTER')} className={style[starter]}>STARTER</button>
-            <button onClick={()=>handleClick('MAIN COURSE')} className={style[main]}>MAIN COURSE</button>
-            <button onClick={()=>handleClick('DESSERT')} className={style[dessert]}>DESSERT</button>
-            <button onClick={()=>handleClick('SIDES')} className={style[sides]}>SIDES</button>
-        </div>
-    )
+function MealType({ setDishType, getCountByType }) {
+  const [active, setActive] = useState("all");
+
+  const handleClick = (type) => {
+    setActive(type);
+    setDishType(type);
+  };
+
+  return (
+    <div className={style.mealType}>
+      <button
+        onClick={() => handleClick("all")}
+        className={active === "all" ? style.selected : style.notSelected}
+      >
+        All ({getCountByType("STARTER") + getCountByType("MAIN COURSE") + getCountByType("DESSERT") + getCountByType("SIDES")})
+      </button>
+      <button
+        onClick={() => handleClick("STARTER")}
+        className={active === "STARTER" ? style.selected : style.notSelected}
+      >
+        STARTER ({getCountByType("STARTER")})
+      </button>
+      <button
+        onClick={() => handleClick("MAIN COURSE")}
+        className={active === "MAIN COURSE" ? style.selected : style.notSelected}
+      >
+        MAIN COURSE ({getCountByType("MAIN COURSE")})
+      </button>
+      <button
+        onClick={() => handleClick("DESSERT")}
+        className={active === "DESSERT" ? style.selected : style.notSelected}
+      >
+        DESSERT ({getCountByType("DESSERT")})
+      </button>
+      <button
+        onClick={() => handleClick("SIDES")}
+        className={active === "SIDES" ? style.selected : style.notSelected}
+      >
+        SIDES ({getCountByType("SIDES")})
+      </button>
+    </div>
+  );
 }
 
-export default MealType
+
+export default MealType;

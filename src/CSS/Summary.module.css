@@ -1,0 +1,31 @@
+.summary {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:100px;
+  z-index: 1000;
+}
+
+.text {
+  margin: 0;
+}
+
+.button {
+  background-color: rgb(245, 183, 84);
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(245, 183, 84);
+}

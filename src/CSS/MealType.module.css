@@ -13,7 +13,7 @@
 }
 
 .selected{
-  background-color: rgb(245, 183, 84); /* green */
+  background-color: rgb(245, 183, 84);
   color: white;
   border-color: rgb(245, 183, 84);
   font-weight: bold;

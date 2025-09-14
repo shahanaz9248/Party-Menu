@@ -1,40 +1,58 @@
 import React,{useState} from 'react'
 import style from '../CSS/DishCard.module.css'
-function DishCard({ dish }) {
-  const [showIngredients, setShowIngredients] = useState(false)
-  const [add,setAdd] =useState('add')
+function DishCard({ dish, addItem, removeItem, isSelected }) {
+  const [showIngredients, setShowIngredients] = useState(false);
+
   if (showIngredients) {
-   return(
-    <div className={style.card} >
-      <img src="https://png.pngtree.com/png-vector/20190420/ourmid/pngtree-vector-cross-icon-png-image_967108.jpg" className={style.i} onClick={()=>setShowIngredients(false)}/>
-      <div className={style.ing}>
-        {dish.ingredients.map((ingredient,index)=>(
-        <span key={index}><b>{ingredient.name}</b>: {ingredient.quantity}<br/></span>
-       ))}
-       </div>  
-   </div>
-   )
-  } else {
     return (
       <div className={style.card}>
         <img
-          src={dish.image}
-          alt={dish.name}
-          className={style.image}
+          src="https://png.pngtree.com/png-vector/20190420/ourmid/pngtree-vector-cross-icon-png-image_967108.jpg"
+          className={style.i}
+          onClick={() => setShowIngredients(false)}
+          alt="close"
         />
+        <div className={style.ing}>
+          {dish.ingredients.map((ingredient, index) => (
+            <span key={index}>
+              <b>{ingredient.name}</b>: {ingredient.quantity}
+              <br />
+            </span>
+          ))}
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className={style.card}>
+        <img src={dish.image} alt={dish.name} className={style.image} />
         <h3 className={style.name}>{dish.name}</h3>
         <p><b>Type:</b> {dish.type}</p>
         <p className={style.description}>{dish.description}</p>
-        <button
-    className={style.bt}
-          onClick={() => setShowIngredients(true)}
-        >
+
+        <button className={style.bt} onClick={() => setShowIngredients(true)}>
           Show Ingredients
         </button>
-        <button className={style[add]}>Add</button>
+
+        {isSelected ? (
+          <button
+            className={style.remove}
+            onClick={() => removeItem(dish.id)}
+          >
+            Remove
+          </button>
+        ) : (
+          <button
+            className={style.add}
+            onClick={() => addItem(dish)}
+          >
+            Add
+          </button>
+        )}
       </div>
-    )
+    );
   }
 }
+
 
 export default DishCard
