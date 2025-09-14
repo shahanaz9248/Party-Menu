@@ -13,7 +13,7 @@ function SearchBar({ setSearchQuery }) {
     <form className={style.searchBar} onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Search dishes..."
+        placeholder="Search dish for your party......."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         className={style.input}

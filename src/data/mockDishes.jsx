@@ -3,7 +3,7 @@ export const dishes = [
     "id": 1,
     "name": "Paneer Tikka",
     "description": "Cubes of paneer marinated in spices and grilled in a tandoor.",
-    "image": "https://placehold.co/300x200/FFD1A9/8B0000?text=Paneer+Tikka",
+    "image": "https://www.indianveggiedelight.com/wp-content/uploads/2021/08/air-fryer-paneer-tikka-featured.jpg",
     "mealType": "STARTER",
     "type": "VEG",
     "ingredients": [
@@ -16,7 +16,7 @@ export const dishes = [
     "id": 2,
     "name": "Veg Manchurian",
     "description": "Fried vegetable balls tossed in tangy Indo-Chinese sauce.",
-    "image": "https://placehold.co/300x200/FCC2B4/5C4033?text=Veg+Manchurian",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSarSxTLDn8swVw8vKs60AmBIx90dxhFMQbrA&s",
     "mealType": "STARTER",
     "type": "VEG",
     "ingredients": [
@@ -25,13 +25,11 @@ export const dishes = [
       { "name": "Soy Sauce", "quantity": "2 tbsp" }
     ]
   },
-
-  // 🍗 NON-VEG STARTERS
   {
     "id": 3,
     "name": "Chicken Tikka",
     "description": "Tender chicken chunks marinated with yogurt and spices, grilled to perfection.",
-    "image": "https://placehold.co/300x200/FADADD/8B0000?text=Chicken+Tikka",
+    "image": "https://butfirstchai.com/wp-content/uploads/2023/03/chicken-tikka-skewers-recipe.jpg",
     "mealType": "STARTER",
     "type": "NON-VEG",
     "ingredients": [
@@ -44,7 +42,7 @@ export const dishes = [
     "id": 4,
     "name": "Fish Fingers",
     "description": "Crispy fried fish sticks served with tartar sauce.",
-    "image": "https://placehold.co/300x200/E8D2AE/004953?text=Fish+Fingers",
+    "image": "https://i.ndtvimg.com/i/2016-09/fish-fingers-625_625x350_71474443801.jpg",
     "mealType": "STARTER",
     "type": "NON-VEG",
     "ingredients": [
@@ -53,13 +51,11 @@ export const dishes = [
       { "name": "Egg", "quantity": "1" }
     ]
   },
-
-  // 🌱 VEG MAIN COURSE
   {
     "id": 5,
     "name": "Kadhai Paneer",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtUVewcvBys0v86FEQzS2XCn3m6wmDNonskg&s",
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "ingredients": [
@@ -72,7 +68,7 @@ export const dishes = [
     "id": 6,
     "name": "Dal Tadka",
     "description": "Yellow lentils tempered with cumin, garlic, and ghee.",
-    "image": "https://placehold.co/300x200/F6E2B3/5C4033?text=Dal+Tadka",
+    "image": "https://www.scrumptiously.com/wp-content/uploads/2024/10/MoongDalTadka.webp",
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "ingredients": [
@@ -85,7 +81,7 @@ export const dishes = [
     "id": 7,
     "name": "Veg Biryani",
     "description": "Fragrant basmati rice cooked with vegetables and spices.",
-    "image": "https://placehold.co/300x200/F9D5E5/4B0082?text=Veg+Biryani",
+    "image": "https://i.ytimg.com/vi/Do7ZdUodDdw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEQctXy1aD1723HT7omylxjn4tMQ",
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "ingredients": [
@@ -94,13 +90,11 @@ export const dishes = [
       { "name": "Spices", "quantity": "to taste" }
     ]
   },
-
-  // 🍗 NON-VEG MAIN COURSE
   {
     "id": 8,
     "name": "Butter Chicken",
     "description": "Chicken cooked in creamy tomato-based gravy with butter.",
-    "image": "https://placehold.co/300x200/FBC4AB/8B0000?text=Butter+Chicken",
+    "image": "https://images.immediate.co.uk/production/volatile/sites/30/2021/02/butter-chicken-ac2ff98.jpg?quality=90&resize=440,400",
     "mealType": "MAIN COURSE",
     "type": "NON-VEG",
     "ingredients": [
@@ -113,7 +107,7 @@ export const dishes = [
     "id": 9,
     "name": "Mutton Rogan Josh",
     "description": "Aromatic lamb curry cooked with Kashmiri spices.",
-    "image": "https://placehold.co/300x200/D8BFD8/5C0033?text=Mutton+Rogan+Josh",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqnilMVCv202sPBalMrgLXlO032JBciiBCxg&s",
     "mealType": "MAIN COURSE",
     "type": "NON-VEG",
     "ingredients": [
@@ -126,7 +120,7 @@ export const dishes = [
     "id": 10,
     "name": "Prawn Curry",
     "description": "Juicy prawns cooked in coconut-based curry sauce.",
-    "image": "https://placehold.co/300x200/F5E6CC/004953?text=Prawn+Curry",
+    "image": "https://khinskitchen.com/wp-content/uploads/2022/07/prawn-curry-with-coconut-milk-07.jpg",
     "mealType": "MAIN COURSE",
     "type": "NON-VEG",
     "ingredients": [
@@ -135,13 +129,11 @@ export const dishes = [
       { "name": "Spices", "quantity": "to taste" }
     ]
   },
-
-  // 🍞 SIDES
   {
     "id": 11,
     "name": "Tandoori Roti",
     "description": "Whole wheat flatbread cooked in a clay oven.",
-    "image": "https://placehold.co/300x200/EADBC8/654321?text=Tandoori+Roti",
+    "image": "https://www.cookingcarnival.com/wp-content/uploads/2020/05/Tandoori-roti-5.jpg",
     "mealType": "SIDES",
     "type": "VEG",
     "ingredients": [
@@ -154,7 +146,7 @@ export const dishes = [
     "id": 12,
     "name": "Butter Naan",
     "description": "Soft and fluffy Indian flatbread topped with butter.",
-    "image": "https://placehold.co/300x200/F8E2CF/8B4513?text=Butter+Naan",
+    "image": "https://i0.wp.com/www.sharmiskitchen.com/wp-content/uploads/2020/09/Garlic-Naan1.jpg?fit=1199%2C1800&ssl=1",
     "mealType": "SIDES",
     "type": "VEG",
     "ingredients": [
@@ -167,7 +159,7 @@ export const dishes = [
     "id": 13,
     "name": "Jeera Rice",
     "description": "Fragrant basmati rice flavored with cumin seeds.",
-    "image": "https://placehold.co/300x200/FFF2B2/5C4033?text=Jeera+Rice",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp_uT9UJlApqsGuZBUY2BBiozP__Luezm_og&s",
     "mealType": "SIDES",
     "type": "VEG",
     "ingredients": [
@@ -176,13 +168,11 @@ export const dishes = [
       { "name": "Ghee", "quantity": "1 tbsp" }
     ]
   },
-
-  // 🍮 DESSERTS
   {
     "id": 14,
     "name": "Gulab Jamun",
     "description": "Soft fried milk-solid dumplings soaked in sugar syrup.",
-    "image": "https://placehold.co/300x200/F9E2AF/8B4513?text=Gulab+Jamun",
+    "image": "https://aartimadan.com/wp-content/uploads/2020/11/milk-powder-gulab-jamuns.jpg",
     "mealType": "DESSERT",
     "type": "VEG",
     "ingredients": [
@@ -195,7 +185,7 @@ export const dishes = [
     "id": 15,
     "name": "Rasgulla",
     "description": "Spongy cheese balls soaked in light sugar syrup.",
-    "image": "https://placehold.co/300x200/FDE2E4/800020?text=Rasgulla",
+    "image": "https://madhurasrecipe.com/wp-content/uploads/2023/10/Rasgulla-1.jpg",
     "mealType": "DESSERT",
     "type": "VEG",
     "ingredients": [
