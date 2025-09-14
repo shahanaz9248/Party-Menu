@@ -1,0 +1,11 @@
+.dishlist{
+     padding: "20px";
+     font-family: "sans-serif";
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
