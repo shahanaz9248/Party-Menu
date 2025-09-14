@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import style from '../CSS/DishCard.module.css'
 function DishCard({ dish }) {
   const [showIngredients, setShowIngredients] = useState(false)
-
+  const [add,setAdd] =useState('add')
   if (showIngredients) {
    return(
     <div className={style.card} >
@@ -31,6 +31,7 @@ function DishCard({ dish }) {
         >
           Show Ingredients
         </button>
+        <button className={style[add]}>Add</button>
       </div>
     )
   }

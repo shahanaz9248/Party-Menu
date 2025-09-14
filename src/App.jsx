@@ -1,16 +1,20 @@
-import React,{useState} from "react";
-import { dishes } from "./data/mockDishes";
-import  DistList from "./components/DishList"
-import SearchBar from "./components/SearchBar";
-import MealType from "./components/MealType";
+import React, { useState } from 'react';
+import DishList from './components/DishList';
+import MealType from './components/MealType';
+import SearchBar from './components/SearchBar';
+import { dishes } from './data/mockDishes';
 
-export default function App() {
-  const[dishType,setDishType]=useState('all')
+function App() {
+  const [dishType, setDishType] = useState('all');
+  const [searchQuery, setSearchQuery] = useState('');
+
   return (
-    <div className="appWrapper">
-      <SearchBar />
-      <MealType setDishType={setDishType}/>
-       <DistList dishes={dishes} dishType={dishType}/>
+    <div>
+      <SearchBar setSearchQuery={setSearchQuery} />
+      <MealType setDishType={setDishType} />
+      <DishList dishes={dishes} dishType={dishType} searchQuery={searchQuery} />
     </div>
   );
 }
+
+export default App;
